@@ -1,6 +1,6 @@
 ## Image Processing README
 
- Django application that handles file uploads (images). The images are uploaded by the user and stored in an SQLite db. The center most pixel of eachimages is extracted then displayed along with the image.
+ Django application that handles file uploads (images). The images are uploaded by the user and stored in an SQLite db. The center most pixel of each image is extracted then displayed along with the image. User can view list of uploaded images along with their individual center most pixels (hex value).
 
  # Requirements
     1. Setup and Project Config (must allow file uploads)
