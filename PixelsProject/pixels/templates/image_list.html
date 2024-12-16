@@ -8,7 +8,7 @@
     <li>
         <a href="{% url 'image_detail' image.id %}">
             <img src="{{ image.image.url }}" alt="Uploaded Image" style="width: 100px; height: auto;">
-            <p>Hex Value: {{ image.hex_color }}</p>
+            <p>Hex Color: {{ image.hex_color }}</p>
         </a>
     </li>
     {% endfor %}
