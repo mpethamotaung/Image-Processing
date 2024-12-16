@@ -4,5 +4,5 @@
 <h1>Image Details</h1>
 <img src="{{ image.image.url}}" alt="Uploaded Image" style="max-width: 100%; height: auto;">
 <p>Hex Color: <span style="color: {{ image.hex_color }}">{{ image.hex_color}}</span></p>
-<a href="{% url 'image_list %}">Back to Image list</a>
+<a href="{% url 'pixels:image_list %}">Back to Image list</a>
 {% endblock %}
