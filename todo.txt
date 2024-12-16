@@ -11,7 +11,8 @@
     > Create a Django model named ImageColor that contains
         -ImageField for uploading images
         -Charfield to store image hex ImageColor
-
+#Views Creation
+#URLS Creation
 #Image Upload and Processing
     > Implement a form to upload images
     > Extract center-most pixel from uploaded image or average center-most hex values
