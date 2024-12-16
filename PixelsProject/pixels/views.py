@@ -22,7 +22,7 @@ def upload_image(request):
 
 def image_list(request):
     images = ImageColor.objects.all()
-    return render(request, 'pixels/image_list.html', {'image': images})
+    return render(request, 'pixels/image_list.html', {'images': images})
 
 def image_detail(request, pk):
     image = ImageColor.objects.get(pk=pk)
