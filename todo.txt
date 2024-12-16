@@ -13,6 +13,7 @@
         -Charfield to store image hex ImageColor
 #Views Creation
 #URLS Creation
+#Templates Creation
 #Image Upload and Processing
     > Implement a form to upload images
     > Extract center-most pixel from uploaded image or average center-most hex values

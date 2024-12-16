@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Image Pixel Extractor {% endblock%}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css %}">
+</head>
+<body>
+    <header>
+        <h1>Image Pixel Extractor</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'image_list' %}">Gallery</a></li>
+                <li><a href="{% url 'upload_image' %}">Upload Image</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Page content -->
+        {% enblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Image Pixel Extractor</p>
+    </footer>
+</body>
+</html>
