@@ -1,9 +1,7 @@
 # Create Virutal Environment
     > Install necessary dependencies:
         -django
-        -django restframework
         -pillow
-        -bytesIO
 
 #Setup and project configuration
     > Setup a new Django project and application
