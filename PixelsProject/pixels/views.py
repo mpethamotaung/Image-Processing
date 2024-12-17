@@ -22,7 +22,7 @@ def upload_image(request):
                 image_instance = ImageColor.objects.create(image=image, hex_color=hex_color)
                 image_instance.save()
                 #Redicrect to image list page
-                return redirect('image_list')
+                return redirect('pixels:image_list')
             except ValueError as e:
                 #This to inform the user if processing fails
                 form.add_error(f'Failed to upload image', {'image': image})
