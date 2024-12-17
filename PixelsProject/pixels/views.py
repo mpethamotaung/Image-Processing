@@ -29,7 +29,7 @@ def upload_image(request):
     else:
         form = ImageUploadForm()
     #Render the uploaded image with the form
-    return render(request, 'pixels/upload.html', {'form': form})
+    return render(request, 'pixels/upload_image.html', {'form': form})
 
 def image_list(request):
     """
