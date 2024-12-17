@@ -1,19 +1,19 @@
-# Create Virutal Environment
+# DONE :: Create Virutal Environment
     > Install necessary dependencies:
         -django
         -pillow
 
-#Setup and project configuration
+# DONE :: Setup and project configuration
     > Setup a new Django project and application
     > Configure the necessary settings for file uploads
 
-#Model Creation
+# DONE :: Model Creation
     > Create a Django model named ImageColor that contains
         -ImageField for uploading images
         -Charfield to store image hex ImageColor
-#Views Creation
-#URLS Creation
-#Templates Creation
+# DONE :: Views Creation
+# DONE :: URLS Creation
+# DONE :: Templates Creation
 #Image Upload and Processing
     > Implement a form to upload images
     > Extract center-most pixel from uploaded image or average center-most hex values
