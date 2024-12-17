@@ -14,9 +14,12 @@
 # DONE :: Views Creation
 # DONE :: URLS Creation
 # DONE :: Templates Creation
-#Image Upload and Processing
+# DONE :: Image Upload and Processing
     > Implement a form to upload images
     > Extract center-most pixel from uploaded image or average center-most hex values
     > Store center most hex value with source image in ImageColor model.
-
+# Change image_list to index (home)
+# Implement CRUD functionality so that user can perform CRUD functions
+# Implement CSS to improve page layout and navigation
+# Maybe add some Js
 
