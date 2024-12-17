@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     #Additional Apps
     "django_extensions",
+    "rest_framework",
     
     #Custom Apps
     "pixels",
