@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     #Additional Apps
-
+    "django_extensions",
+    
     #Custom Apps
     "pixels",
 
