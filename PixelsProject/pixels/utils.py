@@ -22,7 +22,7 @@ def get_center_hex(image_file):
             #Calculate the average color
             avg_color = tuple(
                 sum(pixel[i] for pixel in center_pixels) // len(center_pixels)
-                for i in range(4)
+                for i in range(3) # Loop through 3 channels RGB
             )
 
             #Convert to hex
