@@ -6,7 +6,7 @@
 <ul>
     {% for image in images %}
     <li>
-        <a href="{% url 'pixels:image_detail' image.id %}">
+        <a href="{% url 'pixels:image_details' image.id %}">
             <img src="{{ image.image.url }}" alt="Uploaded Image" style="width: 100px; height: auto;">
             <p>Hex Color: {{ image.hex_color }}</p>
         </a>
