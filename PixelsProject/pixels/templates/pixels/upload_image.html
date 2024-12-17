@@ -6,12 +6,15 @@
 
 <h2>Upload an Image</h2>
 
-<form action="" method="POST" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Upload</button>
-</form>
-
-<a href="{% url 'pixels:image_list' %}"> Back to Image List</a>
+<div class="form-container">
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+    
+    <a href="{% url 'pixels:image_list' %}"> Back to Image List</a>
+    
+</div>
 
 {% endblock %}
