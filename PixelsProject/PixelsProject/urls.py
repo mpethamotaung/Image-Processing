@@ -24,7 +24,6 @@ from django.conf.urls.static import static
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('', include('pixels.urls', namespace='pixels')), #Pixel app urls
-    path('api-auth/', include('rest_framework.urls')), #needed for browsable API
 ]
 
 if settings.DEBUG:
