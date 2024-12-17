@@ -38,11 +38,11 @@ def image_list(request):
     images = ImageColor.objects.all()
     return render(request, 'pixels/image_list.html', {'images': images})
 
-def image_detail(request, id):
+def image_detail(request, pk):
     """
     Displays image details
     """
-    image = ImageColor.objects.get(id=id)
+    image = ImageColor.objects.get(pk=pk)
     return render(request, 'pixels/image_details.html', {'image': image})
 
 

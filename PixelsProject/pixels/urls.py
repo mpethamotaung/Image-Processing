@@ -6,5 +6,5 @@ app_name = 'pixels'
 urlpatterns = [
     path('', views.image_list, name='image_list'), #Root path
     path('upload/', views.upload_image, name='upload_image'),
-    path('image/<int:image_id>/', views.image_detail, name='image_detail'),
+    path('image/<int:pk>/', views.image_detail, name='image_detail'),
 ]
