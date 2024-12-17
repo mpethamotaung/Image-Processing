@@ -33,7 +33,7 @@ def upload_image(request):
 
 def image_list(request):
     """
-    Displays a list of uploaded images and their hex colors.
+    Displays a list of uploaded images and their extracted hex colors.
     """
     images = ImageColor.objects.all()
     return render(request, 'pixels/image_list.html', {'images': images})
