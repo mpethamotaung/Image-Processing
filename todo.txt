@@ -33,4 +33,4 @@ Bonus points:
 [DONE] # Efficiency
     a. extraction of center pixels without loading the entire image into memory
 
-
+***Remember to pip freeze when done.
