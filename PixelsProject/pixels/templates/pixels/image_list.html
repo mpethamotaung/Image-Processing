@@ -6,9 +6,10 @@
 
     {% for image in images %}
     <div class="image-container">
-        <img src="{{ image.image.url }}" alt="Uploaded Image" style="width: 100px; height: auto;">
+        <a href="{% url 'pixels:image_detail' image.id %}">
+            <img src="{{ image.image.url }}" alt="Uploaded Image" style="width: 100px; height: auto;">
         <p>Hex Color: {{ image.hex_color }}</p>
-        <a href="{% url 'pixels:image_detail' image.id %}">View Details</a>
+        </a>
     </div>
     {% endfor %}
 

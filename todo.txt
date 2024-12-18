@@ -1,25 +1,34 @@
-# DONE :: Create Virutal Environment
-    > Install necessary dependencies:
-        -django
-        -pillow
+Requirements:
 
-# DONE :: Setup and project configuration
-    > Setup a new Django project and application
-    > Configure the necessary settings for file uploads
+[DONE] # Setup and Project Configuration:
+[DONE]    a. Set up a new Django project and application
+[DONE]    b. Configure the necessary settings for file uploads
 
-# DONE :: Model Creation
-    > Create a Django model named ImageColor that contains
-        -ImageField for uploading images
-        -Charfield to store image hex ImageColor
-# DONE :: Views Creation
-# DONE :: URLS Creation
-# DONE :: Templates Creation
-# DONE :: Image Upload and Processing
-    > Implement a form to upload images
-    > Extract center-most pixel from uploaded image or average center-most hex values
-    > Store center most hex value with source image in ImageColor model.
-# Change image_list to index (home)
-# Implement CRUD functionality so that user can perform CRUD functions
-# Implement CSS to improve page layout and navigation
-# Maybe add some Js
+[DONE] # Model Creation
+[DONE]    a. Create a Django model named ImageColor that contains:
+[DONE]          i. An ImageField for the uploaded image.
+[DONE]          ii. A CharField to store the hex color
+
+[DONE] # Image Upload & Processing:
+[DONE]    a. Implement a form to upload images
+[DONE]    b. After the image is uploaded, extract the center-most pixels or 
+            the average center-most 4 pixels' hex values.
+[DONE]    c. Store the resulting hex value along with the image in the ImageColor model.
+
+Deliverables:
+
+[DONE] A Django application with the above features implemented.
+[In Progress..] Brief documentation on how to set up, run, and test the application.
+
+Bonus points:
+[] # Frontend Enhancement
+[DONE]      a. Use Django's template system to display uploaded images along with 
+            extracted colors
+[]      b. Allow users to click on an image to view it in full along with its color
+[] # Error Handling
+[]      a. Implement error handling for non-image file uploads
+[]      b. Handle cases where image processing might fail
+[] # Efficiency
+    a. extraction of center pixels without loading the entire image into memory
+
 
