@@ -18,17 +18,19 @@ Requirements:
 Deliverables:
 
 [DONE] A Django application with the above features implemented.
-[In Progress..] Brief documentation on how to set up, run, and test the application.
+[In Progress...] Brief documentation on how to set up, run, and test the application.
 
 Bonus points:
-[] # Frontend Enhancement
-[DONE]      a. Use Django's template system to display uploaded images along with 
-            extracted colors
-[]      b. Allow users to click on an image to view it in full along with its color
-[] # Error Handling
-[]      a. Implement error handling for non-image file uploads
-[]      b. Handle cases where image processing might fail
-[] # Efficiency
+[DONE]              # Frontend Enhancement
+[DONE]                  a. Use Django's template system to display uploaded images along with 
+                            extracted colors
+[In Progress...]        b. Allow users to click on an image to view it in full along with its color
+
+[DONE] # Error Handling
+[DONE]      a. Implement error handling for non-image file uploads
+[DONE]      b. Handle cases where image processing might fail
+
+[DONE] # Efficiency
     a. extraction of center pixels without loading the entire image into memory
 
 
