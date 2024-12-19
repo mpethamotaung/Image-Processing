@@ -22,7 +22,7 @@ def upload_image(request):
                 image_instance = ImageColor.objects.create(image=image, hex_color=hex_color)
                 image_instance.save()
                 #Redicrect to image list page
-                return redirect('pixels:image_list')
+                return redirect('pixels:upload_success')
             except ValueError as e:
                 #This to inform the user if processing fails
                 form.add_error(f'Failed to upload image', {'image': image})
@@ -44,6 +44,16 @@ def image_detail(request, pk):
     """
     image = ImageColor.objects.get(pk=pk)
     return render(request, 'pixels/image_details.html', {'image': image})
+
+def upload_success(request):
+    """
+    Displays uploaded image with hex color
+    """
+    
+    #Retrieve recent uploaded image
+    image_instance = ImageColor.objects.latest('id')
+
+    return render(request, 'pixels/upload_success.html', {'image_instance': image_instance})
 
 
 

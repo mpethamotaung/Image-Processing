@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+
+<h1>Image Uploaded Successfully</h1>
+
+<div class="image-detail-container">
+    <div class="image-hex">
+        <img src="{{ image_instance.image.url }}" alt="Uploaded Image">
+        <p>Hex Color: {{ image_instance.hex_color }}</p>
+    </div>
+    <div class="mini-nav-container">
+        <a class="back-btn" href="{% url 'pixels:upload_image' %}">Back</a>
+        <a class="gallery-btn" href="{% url 'pixels:image_list' %}">Gallery</a>
+    </div>
+    
+</div>
+
+
+
+{% endblock %}

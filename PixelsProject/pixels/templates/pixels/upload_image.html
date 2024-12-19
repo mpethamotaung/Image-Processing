@@ -7,13 +7,17 @@
 <h2>Upload an Image</h2>
 
 <div class="form-container">
-    <form action="" method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Upload</button>
-    </form>
+    <div class="form">
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Upload</button>
+        </form>
+    </div>
     
-    <a href="{% url 'pixels:image_list' %}">Gallery</a>
+    <div class="mini-nav-container">
+        <a href="{% url 'pixels:image_list' %}" class="back-btn">Back</a>
+    </div>
     
 </div>
 
