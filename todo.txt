@@ -21,10 +21,10 @@ Deliverables:
 [In Progress...] Brief documentation on how to set up, run, and test the application.
 
 Bonus points:
-[DONE]              # Frontend Enhancement
-[DONE]                  a. Use Django's template system to display uploaded images along with 
+[DONE]      # Frontend Enhancement
+[DONE]        a. Use Django's template system to display uploaded images along with 
                             extracted colors
-[In Progress...]        b. Allow users to click on an image to view it in full along with its color
+[DONE]        b. Allow users to click on an image to view it in full along with its color
 
 [DONE] # Error Handling
 [DONE]      a. Implement error handling for non-image file uploads
