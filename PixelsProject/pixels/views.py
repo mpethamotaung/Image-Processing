@@ -2,8 +2,10 @@ from django.shortcuts import render,redirect
 from .forms import ImageUploadForm
 from .models import ImageColor
 from .utils import get_center_hex
+from django.db import transaction
 
-
+#Image Upload View
+@transaction.atomic
 def upload_image(request):
     """
     Handles image uploads and process the center-most pixel color
@@ -31,6 +33,7 @@ def upload_image(request):
     #Render the uploaded image with the form
     return render(request, 'pixels/upload_image.html', {'form': form})
 
+# List uploaded images
 def image_list(request):
     """
     Displays a list of uploaded images and their extracted hex colors.
@@ -38,6 +41,7 @@ def image_list(request):
     images = ImageColor.objects.all()
     return render(request, 'pixels/image_list.html', {'images': images})
 
+# Show image details
 def image_detail(request, pk):
     """
     Displays image details
@@ -45,6 +49,7 @@ def image_detail(request, pk):
     image = ImageColor.objects.get(pk=pk)
     return render(request, 'pixels/image_details.html', {'image': image})
 
+# Successful image upload
 def upload_success(request):
     """
     Displays uploaded image with hex color
