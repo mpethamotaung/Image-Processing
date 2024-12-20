@@ -4,7 +4,7 @@ from .models import ImageColor
 from .utils import get_center_hex
 from django.db import transaction
 
-#Image Upload View
+#Image Upload 
 @transaction.atomic
 def upload_image(request):
     """
