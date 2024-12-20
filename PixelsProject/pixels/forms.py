@@ -15,6 +15,6 @@ class ImageUploadForm(forms.ModelForm):
 
         #Check for file size
         if image.size > self.MAX_FILE_SIZE:
-            raise ValidationError(f"The file is too large. The maximum file size is {self.MAX_FILE_SIZE/(1920*1080)} MB.")
+            raise ValidationError(f"The file is too large. The maximum file size is {self.MAX_FILE_SIZE/(1024*1024)} MB.")
 
         return image
