@@ -4,7 +4,7 @@ from django.core.exceptions import ValidationError
 
 class ImageUploadForm(forms.ModelForm):
 
-    MAX_FILE_SIZE = 5 * 1024 * 1024
+    MAX_FILE_SIZE = 5 * 1024 * 1024 #5mb 
     
     class Meta:
         model = ImageColor
