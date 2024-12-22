@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 
     #Additional Apps
     "django_extensions", #Show_urls Debug
-    "debug_toolbar",
+    #"debug_toolbar",
     
     #Custom Apps
     "pixels",
@@ -50,7 +50,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     #Debug Tool bar
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
+    #"debug_toolbar.middleware.DebugToolbarMiddleware",
 
     #Defualt Middleware
     "django.middleware.security.SecurityMiddleware",
@@ -115,9 +115,9 @@ AUTH_PASSWORD_VALIDATORS = [
 #Configure Internal IPs
 # https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
 
-INTERNAL_IPS = [
-    "127.0.0.1"
-]
+#INTERNAL_IPS = [
+#    "127.0.0.1"
+#]
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/

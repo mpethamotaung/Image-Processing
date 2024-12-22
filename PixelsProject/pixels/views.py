@@ -27,7 +27,7 @@ def upload_image(request):
                 return redirect('pixels:upload_success')
             except ValueError as e:
                 #This to inform the user if processing fails
-                form.add_error(f'Failed to upload image', {'image': image})
+                form.add_error(None, 'Failed to upload image')
     else:
         form = ImageUploadForm()
     #Render the uploaded image with the form
