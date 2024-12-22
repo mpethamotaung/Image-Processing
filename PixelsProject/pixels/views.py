@@ -42,7 +42,7 @@ def image_list(request):
     return render(request, 'pixels/image_list.html', {'images': images})
 
 # Show image details
-def image_detail(request, pk):
+def image_details(request, pk):
     """
     Displays image details
     """

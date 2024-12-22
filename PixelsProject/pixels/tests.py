@@ -15,15 +15,16 @@ class ImageViewTestCase(TestCase):
         self.client = Client()
 
         #Create a test image in memory
-        self.test_image = BytesIO
+        self.test_image = BytesIO()
         image = Image.new("RGB", (100,100), color=(255,0,0))
         image.save(self.test_image, format='JPEG')
         self.test_image.seek(0)
 
         #URLs
-        self.upload_url = reverse('pixel:upload_image')
+        self.upload_url = reverse('pixels:upload_image')
         self.image_list_url = reverse('pixels:image_list')
         self.upload_success_url = reverse('pixels:upload_success')
+        self.image_detials = reverse('pixels:image_details')
 
     def test_image_upload_valid(self):
         """
