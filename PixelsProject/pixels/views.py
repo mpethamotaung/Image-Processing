@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect, get_object_or_404
 from .forms import ImageUploadForm
 from .models import ImageColor
 from .utils import get_center_hex
@@ -60,5 +60,15 @@ def upload_success(request):
 
     return render(request, 'pixels/upload_success.html', {'image_instance': image_instance})
 
-
-
+#Update image (edit hex color or other details)
+def delete_image(request,pk):
+    """
+    Allows the user to delete an image
+    """
+    image_instance = get_object_or_404(ImageColor, pk=pk)
+    
+    if request.method == 'GET':
+        image_instance.delete()
+        return redirect('pixels:image_list')
+    
+    return render(request, 'pixels/confirm_delete.html', {'image': image_instance})
