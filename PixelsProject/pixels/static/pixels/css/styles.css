@@ -79,7 +79,6 @@
 }
 
 .gallery-btn {
-    margin: 15px;
     padding: 12px 18px;
     background-color: #00a000;
     text-decoration: none;
@@ -87,12 +86,15 @@
     border-radius: 8px;
 }
 
+.gallery-btn:hover{
+    background-color: #007900;
+}
+
 .mini-nav-container {
     margin: 15px;
 }
 
 .delete-btn {
-    margin: 15px;
     padding: 12px 18px;
     background-color: #ff0224;
     text-decoration: none;
@@ -101,7 +103,31 @@
 }
 
 .delete-btn:hover{
-    background-color: #a70117;
+    background-color: #c9001b;
+}
+
+.upload-btn {
+    padding: 12px 18px;
+    background-color: #0278ff;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+}
+
+.upload-btn:hover{
+    background-color: #0255b4;
+}
+
+.cancel-btn {
+    padding: 12px 18px;
+    background-color: #ff0224;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+}
+
+.cancel-btn:hover{
+    background-color: #c9001b;
 }
 
 /*Footer*/
