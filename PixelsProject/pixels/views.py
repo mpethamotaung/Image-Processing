@@ -3,6 +3,7 @@ from .forms import ImageUploadForm
 from .models import ImageColor
 from .utils import get_center_hex
 from django.db import transaction
+from django.urls import reverse
 
 #Image Upload 
 @transaction.atomic
@@ -10,6 +11,10 @@ def upload_image(request):
     """
     Handles image uploads and process the center-most pixel color
     """
+    #Implement HTTP Referer to allow users to scroll back and forth
+    previous_page = request.META.get('HTTP_REFERER', None) #get previous page's url
+    default_back_url = reverse('pixels:image_list') #Fallback to image list
+    
     if request.method == 'POST':
         form = ImageUploadForm(request.POST, request.FILES)
 
@@ -31,7 +36,11 @@ def upload_image(request):
     else:
         form = ImageUploadForm()
     #Render the uploaded image with the form
-    return render(request, 'pixels/upload_image.html', {'form': form})
+    return render(request, 'pixels/upload_image.html', {
+        'form': form,
+        'previous_page': previous_page,  # Pass the previous page to the template
+        'default_back_url': default_back_url, # Pass the defualt URL
+    })
 
 # List uploaded images
 def image_list(request):
@@ -66,9 +75,17 @@ def delete_image(request,pk):
     Allows the user to delete an image
     """
     image_instance = get_object_or_404(ImageColor, pk=pk)
+
+    #Get the previous page or set a defualt
+    previous_page = request.META.get('HTTP_REFERER', None)
+    defualt_back_url = reverse('pixels:image_list')
     
     if request.method == 'POST':
         image_instance.delete()
         return redirect('pixels:image_list')
     
-    return render(request, 'pixels/confirm_delete.html', {'image': image_instance})
+    return render(request, 'pixels/confirm_delete.html', {
+        'image': image_instance,
+        'previous_page': previous_page,
+        'default_back_url': defualt_back_url,
+        })

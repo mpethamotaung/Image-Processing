@@ -17,7 +17,7 @@
 </form>
 
 <div class="mini-nav-container">
-    <a href="{% url 'pixels:image_list'%}" class="cancel-btn">Cancel</a>
+    <a href="{{ previous_page|default:default_back_url }}" class="cancel-btn">Cancel</a>
 </div>
 
 {% endblock %}
