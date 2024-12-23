@@ -91,6 +91,19 @@
     margin: 15px;
 }
 
+.delete-btn {
+    margin: 15px;
+    padding: 12px 18px;
+    background-color: #ff0224;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+}
+
+.delete-btn:hover{
+    background-color: #a70117;
+}
+
 /*Footer*/
 footer {
     text-align: center;

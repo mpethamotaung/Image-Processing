@@ -10,8 +10,11 @@
             <img src="{{ image.image.url }}" alt="Uploaded Image" style="width: 100px; height: auto;">
         <p>Hex Color: {{ image.hex_color }}</p>
         </a>
-        <a href="{% url 'pixels:delete_image' image.pk %}">Delete</a>
     </div>
+    <div class="mini-nav-container">
+        <a href="{% url 'pixels:delete_image' image.pk %}" class="delete-btn">Delete</a>
+    </div>
+    
     {% endfor %}
 
 {% endblock %}

@@ -60,14 +60,14 @@ def upload_success(request):
 
     return render(request, 'pixels/upload_success.html', {'image_instance': image_instance})
 
-#Update image (edit hex color or other details)
+#Delete uploaded image
 def delete_image(request,pk):
     """
     Allows the user to delete an image
     """
     image_instance = get_object_or_404(ImageColor, pk=pk)
     
-    if request.method == 'GET':
+    if request.method == 'POST':
         image_instance.delete()
         return redirect('pixels:image_list')
     
