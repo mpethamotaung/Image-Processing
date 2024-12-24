@@ -95,6 +95,7 @@
     transition: transform 0.8 ease, box-shadow 0.8 ease;
 }
 
+
 .image-container:hover {
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
     transform: translateY(-4px);
@@ -119,15 +120,30 @@
 }
 
 /*Success page styling*/
-.image-detail-container{
-    padding: 15px;
+.image-details-container{
+    margin: 24px;
 }
 
-.image-detail-container .image-hex p {
+.image-details-container img{
+    margin: 16px;
+    padding: 16px;
+    max-width: fit-content;
+    max-height: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: transform 0.8 ease, box-shadow 0.8 ease;
+}
+
+.image-details-container img:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    transform: translateY(-2px); 
+}
+
+.image-details-container .image-hex p {
     padding: 15px 0px;
 }
 
-/*Details page styling*/
+/*details page styling*/
 
 /*Upload image page styling*/
 .form-container .form{
