@@ -6,16 +6,16 @@
 
 <div class="image-detail-container">
     <div class="image-hex">
-        <img src="{{ image_instance.image.url }}" alt="Uploaded Image">
-        <p>Hex Color: {{ image_instance.hex_color }}</p>
+        <img src="{{ image_instance.image.url }}" alt="Uploaded Image" style="max-width: 40%; height: auto;">
+        <p>
+            <span style="display: inline-block; width: 50px; height: 20px; background-color: {{ image_instance.hex_color }}; border: 1px solid #000;"></span>
+            {{ image_instance.hex_color }}
+        </p>
     </div>
     <div class="mini-nav-container">
         <a class="back-btn" href="{% url 'pixels:upload_image' %}">Back</a>
         <a class="gallery-btn" href="{% url 'pixels:image_list' %}">Gallery</a>
     </div>
-    
 </div>
-
-
 
 {% endblock %}
