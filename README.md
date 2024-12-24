@@ -19,7 +19,7 @@ This Django application handles image file uploads. Uploaded images are stored i
 * CSS
 
 ## ⚙ Getting Started
-1. Clone or fork the repository.
+1. Fork the repository.
 2. Create a virtual environment (pyenv, virtualenv, anaconda, etc) using recommended 'python 3.12.8' I have not tested it on any other Python version.
 3. Install the requirements from `requirements.txt` in your virtual environment.
 4. Open the repository directory '(local_instance)/image-processing/pixelsproject/' in the command line (in your IDE of choice) and run:
