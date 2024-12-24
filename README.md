@@ -30,5 +30,3 @@ Changes made:
 - Organized the features list.
 - Corrected typos and formatting issues.
 - Added syntax highlighting for the command.
-
-## License
