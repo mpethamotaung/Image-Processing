@@ -19,11 +19,14 @@ This Django application handles image file uploads. Uploaded images are stored i
 * CSS
 
 ## ⚙ Getting Started
-1. Clone the repository
-2. Create a virtual environment and install the requirements from `requirements.txt`
-3. Open the repository directory in the command line and run:
+1. Clone the repository.
+2. Create a virtual environment using recommended 'python 3.12.8' I have not tested it on any other Python version.
+3. Install the requirements from `requirements.txt` in your virtual environment.
+4. Open the repository directory in the command line and run:
    ```sh
    python manage.py runserver
+5. I've included a pics folder for your convenience 'app_test_images' or you can use your images to test the app.
+> If you have any issue, please check the technical documentation
 
 Changes made:
 - Improved the grammar and clarity of the descriptions.
