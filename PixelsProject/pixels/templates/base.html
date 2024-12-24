@@ -6,11 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} Pixel Extractor {% endblock%}</title>
     <link rel="stylesheet" href="{% static 'pixels/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'pixels/images/favicon_io/favicon.ico' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'pixles/images/favicon_io/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'pixels/images/favicon_io/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'pixels/images/favicon_io/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'pixels/images/favicon_io/site.webmanifest' %}">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <h1><a href="{% url 'pixels:image_list' %}">Pixel Extractor</a></h1>
+            <div class="brand-container">
+                <a href="{% url 'pixels:image_list'%}">
+                    <img src="{% static 'pixels/images/logo.png' %}" alt="Logo" style="width: 40px; height: auto;">
+                    <h1><a href="{% url 'pixels:image_list' %}" class="brand-name">Pixel Extractor</a></h1>
+                </a>
+            </div>
+            
             <ul class="nav-links">
                 <li><a href="{% url 'pixels:image_list' %}">Gallery</a></li>
                 <li><a href="{% url 'pixels:upload_image' %}">Upload Image</a></li>
