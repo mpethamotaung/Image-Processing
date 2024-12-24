@@ -1,30 +1,34 @@
 # Image Processing README
 
- Django application that handles file uploads (images). The images are uploaded by the user and stored in an SQLite db. The center most pixel of each image is extracted then displayed along with the image. User can view list of uploaded images along with their individual center most pixels (hex value).
+This Django application handles image file uploads. Uploaded images are stored in an SQLite database. The center-most pixel of each image is extracted and displayed along with its details.
 
- ## 🔬 Features
-    1. Upload Image with Image Validation
-    2. Extract Center-most pixel of uploaded image
-    3. User access gallery(uploaded) images
-    4. User access image details by clicking on the image, hex value
-    5. CRUD functionality (except for update)
-    6. User able to navigate to all endpoints, and be able to scroll from/to any page from/to any page
-    7. Error handling for large images
-    8. Error handling for non-image file uploads
+## 🔬 Features
+1. Upload images with validation
+2. Extract the center-most pixel of uploaded images
+3. Access a gallery of uploaded images
+4. View image details, including hex values, by clicking on the image
+5. CRUD functionality (excluding update)
+6. Navigate to all endpoints and scroll between any pages
+7. Error handling for large images
+8. Error handling for non-image file uploads
 
-## 📚 Technologies Used:
-    *Python
-    *Django
-    *HTML
-    *CSS
+## 📚 Technologies Used
+* Python
+* Django
+* HTML
+* CSS
 
-## ⚙ Getting Started:
-    1. Clone the repository
-    2. Create a virtual environement and install the requirements.txt
-    3. Open repository directory in cmd and run
-        -python manage.py runserver
-    4. Upload image files to extract center most hex values
+## ⚙ Getting Started
+1. Clone the repository
+2. Create a virtual environment and install the requirements from `requirements.txt`
+3. Open the repository directory in the command line and run:
+   ```sh
+   python manage.py runserver
 
-## Contributors:
-    * [Mpetha Sthembiso Motaung] <mpethamotaung@gmail.com>
+Changes made:
+- Improved the grammar and clarity of the descriptions.
+- Organized the features list.
+- Corrected typos and formatting issues.
+- Added syntax highlighting for the command.
 
+## License
