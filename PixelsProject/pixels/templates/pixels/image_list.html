@@ -9,23 +9,23 @@
         </div>
     </div>
 
-
-    {% for image in images %}
-    <div class="image-container">
-        <a href="{% url 'pixels:image_details' image.pk %}">
-            <img src="{{ image.image.url }}" alt="Uploaded Image" style="width:240px; height: auto;">
-            <p>
-                <span style="display: inline-block; width: 50px; height: 20px; background-color: {{ image.hex_color }}; border: 1px solid #000;"></span>
-                {{ image.hex_color }}
-            </p>
-        </a>
-        <div class="mini-nav-container">
-            <a href="{% url 'pixels:image_details' image.pk %}" class="details-btn">Details</a>
-            <a href="{% url 'pixels:delete_image' image.pk %}" class="delete-btn">Delete</a>
+    <!-- Grid container to hold images -->
+    <div class="image-grid">
+        {% for image in images %}
+        <div class="image-container">
+            <a href="{% url 'pixels:image_details' image.pk %}">
+                <img src="{{ image.image.url }}" alt="Uploaded Image">
+                <p>
+                    <span style="display: inline-block; width: 50px; height: 20px; background-color: {{ image.hex_color }}; border: 1px solid #000;"></span>
+                    {{ image.hex_color }}
+                </p>
+            </a>
+            <div class="mini-nav-container">
+                <a href="{% url 'pixels:image_details' image.pk %}" class="details-btn">Details</a>
+                <a href="{% url 'pixels:delete_image' image.pk %}" class="delete-btn">Delete</a>
+            </div>
         </div>
-        
+        {% endfor %}
     </div>
-    
-    {% endfor %}
 
 {% endblock %}
