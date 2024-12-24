@@ -17,6 +17,7 @@ This Django application handles image file uploads. Uploaded images are stored i
 * Django
 * HTML
 * CSS
+* Figma
 
 ## ⚙ Getting Started
 1. Fork the repository.
