@@ -26,7 +26,7 @@ This Django application handles image file uploads. Uploaded images are stored i
    ```sh
    python manage.py runserver
 5. I've included a pics folder for your convenience 'app_test_images' or you can use your images to test the app.
-> If you have any issue, please check the technical documentation
+> If you have any issue, please check the technical documentation: https://github.com/mpethamotaung/Image-Processing/blob/main/Pixel%20Project%20(Techical%20Documentation)%20v1.0.docx
 
 Changes made:
 - Improved the grammar and clarity of the descriptions.
