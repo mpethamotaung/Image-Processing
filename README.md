@@ -19,13 +19,17 @@ This Django application handles image file uploads. Uploaded images are stored i
 * CSS
 
 ## ⚙ Getting Started
-1. Clone the repository.
-2. Create a virtual environment using recommended 'python 3.12.8' I have not tested it on any other Python version.
+1. Clone or fork the repository.
+2. Create a virtual environment (pyenv, virtualenv, anaconda, etc) using recommended 'python 3.12.8' I have not tested it on any other Python version.
 3. Install the requirements from `requirements.txt` in your virtual environment.
-4. Open the repository directory in the command line and run:
+4. Open the repository directory '(local_instance)/image-processing/pixelsproject/' in the command line (in your IDE of choice) and run:
    ```sh
    python manage.py runserver
+6. The default development server address is:  'http://127.0.0.1:8000/'
+7. Navigate to 'upload image' in the navbar and upload image(s)
 5. I've included a pics folder for your convenience 'app_test_images' or you can use your images to test the app.
+   **Note:** These pics are licensible 
+   
 > If you have any issue, please check the technical documentation: https://github.com/mpethamotaung/Image-Processing/blob/main/Pixel%20Project%20(Techical%20Documentation)%20v1.0.docx
 
 Changes made:
