@@ -1,4 +1,4 @@
-anaconda-anon-usage 
+anaconda-anon-usage == 0.5.0
 anaconda-cli-base 
 anaconda-client 
 anaconda-cloud-auth 
