@@ -92,6 +92,12 @@
     max-width: fit-content;
     max-height: fit-content;
     border-radius: 16px;
+    transition: transform 0.8 ease, box-shadow 0.8 ease;
+}
+
+.image-container:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    transform: translateY(-4px);
 }
 
 .image-grid{
