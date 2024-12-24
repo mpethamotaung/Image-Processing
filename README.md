@@ -28,10 +28,10 @@
     4. Error Handling: How well does the application handle unexpected inputs or errors?
     5. Bonus: Are any of the bonus points implemented? How well?
 
-## Technologies Used:
+## 📚Technologies Used:
     *Django 
 
-## Getting Started:
+## ⚙ Getting Started:
     1. Clone the repository
     2. Create a virtual environement and install the requirements.txt
     3. Open repository directory in cmd and run
