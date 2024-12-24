@@ -45,10 +45,28 @@
     color: #161414;
 }
 
+/*Hero Styling*/
+.hero{
+    display: flex;
+    justify-content: center;
+    margin: 16px 16px;
+}
+
+.hr-line{
+    background-color: rgb(52,57,81);
+    width: 40vh;
+    height: 8px;
+    border-radius: 8px;
+    margin-top: 16px 16px;
+}
+
+
 /*Image List*/
 .image-container {
     margin: 16px;
     padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: fit-content;
 }
 
 /*Success page styling*/
