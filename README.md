@@ -11,7 +11,10 @@
         - Store uploaded image with it's hex value pair
 
 ## 📚 Technologies Used:
-    *Django 
+    *Python
+    *Django
+    *HTML
+    *CSS
 
 ## ⚙ Getting Started:
     1. Clone the repository
