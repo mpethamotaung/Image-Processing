@@ -1,43 +1,39 @@
 # Image Processing README
 
- Django application that handles file uploads (images). The images are uploaded by the user and stored in an SQLite db. The center most pixel of each image is extracted then displayed along with the image. User can view list of uploaded images along with their individual center most pixels (hex value).
+This Django application handles image file uploads. Uploaded images are stored in an SQLite database. The center-most pixel of each image is extracted and displayed along with its details.
 
- ## Requirements
-    1. Setup and Project Config (must allow file uploads)
-    2. Model must have 2 fields (image upload & hex charfield)
-    3. Image upload processing 
-        - Images uploaded through a form
-        - Extract center most hex value of image
-        - Store uploaded image with it's hex value pair
+## 🔬 Features
+1. Upload images with validation
+2. Extract the center-most pixel of uploaded images
+3. Access a gallery of uploaded images
+4. View image details, including hex values, by clicking on the image
+5. CRUD functionality (excluding update)
+6. Navigate to all endpoints and scroll between any pages
+7. Error handling for large images
+8. Error handling for non-image file uploads
 
- ## Deliverables
+## 📚 Technologies Used
+* Python
+* Django
+* HTML
+* CSS
 
-    # Django application with all the above requirements
-    # Technical documentation (set up, run, and test)
+## ⚙ Getting Started
+1. Fork the repository.
+2. Create a virtual environment (pyenv, virtualenv, anaconda, etc) using recommended 'python 3.12.8'
+3. Install the requirements from `requirements.txt` in your virtual environment.
+4. Open the repository directory '(local_instance)/image-processing/pixelsproject/' in the command line (in your IDE of choice) and run:
+   ```sh
+   python manage.py runserver
+6. The default development server address is:  'http://127.0.0.1:8000/'
+7. Navigate to 'upload image' in the navbar and upload image(s)
+5. I've included a pics folder for your convenience 'app_test_images' or you can use your images to test the app.
+   **Note:** These pics are licensible 
+   
+> If you have any issues, please check the technical documentation: https://github.com/mpethamotaung/Image-Processing/blob/main/Pixel%20Project%20(Techical%20Documentation)%20v1.0.docx
 
- ## Bonus points
-    1. Frontend Enhancement (Look and feel) native templates
-    2. Error handling ( if != image file, if processing fails)
-    3. Efficient extraction ( minimum memory usage)
- 
- ## Evaluation Criteria
-
-    1. Functionality: Does the application work as described without errors?
-    2. Code Quality: Is the code organized, readable, and follows best practices
-    3. Efficiency: How well is the image processing algorithm implemented? Does it handle large images efficiently?
-    4. Error Handling: How well does the application handle unexpected inputs or errors?
-    5. Bonus: Are any of the bonus points implemented? How well?
-
-## Technologies Used:
-    *Django 
-
-## Getting Started:
-    1. Clone the repository
-    2. Create a virtual environement and install the requirements.txt
-    3. Open repository directory in cmd and run
-        -python manage.py runserver
-    4. Upload image files to extract center most hex values
-
-## Contributors:
-    * [Mpetha Sthembiso Motaung] <mpethamotaung@gmail.com>
-
+Changes made:
+- Improved the grammar and clarity of the descriptions.
+- Organized the features list.
+- Corrected typos and formatting issues.
+- Added syntax highlighting for the command.
