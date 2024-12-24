@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} Image Pixel Extractor {% endblock%}</title>
+    <title>{% block title %} Pixel Extractor {% endblock%}</title>
     <link rel="stylesheet" href="{% static 'pixels/css/styles.css' %}">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <h1><a href="{% url 'pixels:image_list' %}">Image Pixel Extractor</a></h1>
+            <h1><a href="{% url 'pixels:image_list' %}">Pixel Extractor</a></h1>
             <ul class="nav-links">
                 <li><a href="{% url 'pixels:image_list' %}">Gallery</a></li>
                 <li><a href="{% url 'pixels:upload_image' %}">Upload Image</a></li>

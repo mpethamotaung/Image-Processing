@@ -52,6 +52,10 @@
     margin: 16px 16px;
 }
 
+.app-name{
+    color: rgb(223, 4, 70);
+}
+
 .hr-line{
     background-color: rgb(52,57,81);
     width: 32vh;
@@ -97,6 +101,8 @@
 .image-detail-container .image-hex p {
     padding: 15px 0px;
 }
+
+/*Details page styling*/
 
 /*Upload image page styling*/
 .form-container .form{

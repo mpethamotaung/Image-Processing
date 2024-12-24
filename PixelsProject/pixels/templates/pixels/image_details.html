@@ -2,20 +2,26 @@
 {% load static %}
 {% block content %}
 
-<h1>Image Details</h1>
-<div class="image-detail-container">
-    <img src="{{ image.image.url}}" alt="Uploaded Image" style="max-width: 40%; height: auto;">
-    <p>
-        <span style="display: inline-block; width: 50px; height: 20px; background-color: {{ image.hex_color }}; border: 1px solid #000;"></span>
-        {{ image.hex_color }}
-    </p>
+<div class="hero">
+    <h1>Image Details</h1>
 </div>
-<div class="mini-nav-container">
-    <a href="{% url 'pixels:image_list' %}" class="back-btn">Back</a>
-    <a href="{% url 'pixels:image_list' %}" class="gallery-btn">Gallery</a>
-    <a href="{% url 'pixels:delete_image' image.pk %}" class="delete-btn">Delete</a>
-    <a href="{% url 'pixels:upload_image' %}" class="upload-btn">Upload another image</a>
+
+<div class="details-view">
+    <div class="image-detail-container">
+        <img src="{{ image.image.url}}" alt="Uploaded Image" style="max-width: 40%; height: auto;">
+        <p>
+            <span style="display: inline-block; width: 50px; height: 20px; background-color: {{ image.hex_color }}; border: 1px solid #000;"></span>
+            {{ image.hex_color }}
+        </p>
+    </div>
+    <div class="mini-nav-container">
+        <a href="{% url 'pixels:image_list' %}" class="back-btn">Back</a>
+        <a href="{% url 'pixels:image_list' %}" class="gallery-btn">Gallery</a>
+        <a href="{% url 'pixels:delete_image' image.pk %}" class="delete-btn">Delete</a>
+        <a href="{% url 'pixels:upload_image' %}" class="upload-btn">Upload another image</a>
+    </div>
 </div>
+
 
 
 {% endblock %}
