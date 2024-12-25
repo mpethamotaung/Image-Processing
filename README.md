@@ -39,6 +39,7 @@ This Django application handles image file uploads. Uploaded images are stored i
 5. The default development server address is:  'http://127.0.0.1:8000/'
 6. Navigate to 'upload image' in the navbar and upload image(s)
 7. I've included a pics folder for your convenience 'app_test_images' or you can use your images to test the app.
+   
    **Note:** These pics are licensible 
    
 > If you have any issues, please check the technical documentation: https://github.com/mpethamotaung/Image-Processing/blob/main/Pixel%20Project%20(Techical%20Documentation)%20v1.0.docx
