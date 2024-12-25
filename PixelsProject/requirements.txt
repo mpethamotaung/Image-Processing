@@ -1,8 +1,9 @@
 asgiref==3.8.1
-certifi==2024.12.14
+certifi @ file:///C:/b/abs_59o0xj7aav/croot/certifi_1734473304008/work/certifi
 Django==5.1.4
 django-debug-toolbar==4.4.6
 django-extensions==3.2.3
+pillow==11.0.0
 setuptools==75.1.0
 sqlparse==0.5.3
 tzdata==2024.2
