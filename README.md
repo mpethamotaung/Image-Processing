@@ -28,6 +28,7 @@ This Django application handles image file uploads. Uploaded images are stored i
      conda create --name <my-env>
 
 3. Install the requirements from `requirements.txt` in your virtual environment.
+   
    ```sh
    pip install -r /path/to/requirements.txt
 4. Open the repository directory '(local_instance)/image-processing/pixelsproject/' in the command line (in your IDE of choice) and run:
