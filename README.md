@@ -24,7 +24,7 @@ This Django application handles image file uploads. Uploaded images are stored i
 2. Create a virtual environment (pyenv, virtualenv, anaconda, etc) using recommended 'python 3.12.8'
   **Anaconda**
    * Create an environment
-     '''sh
+     ```sh
      conda create --name <my-env>
    *  
 4. Install the requirements from `requirements.txt` in your virtual environment.
