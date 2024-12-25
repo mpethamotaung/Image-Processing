@@ -43,7 +43,7 @@ This Django application handles image file uploads. Uploaded images are stored i
    
 > If you have any issues, please check the technical documentation: https://github.com/mpethamotaung/Image-Processing/blob/main/Pixel%20Project%20(Techical%20Documentation)%20v1.0.docx
 
-Changes made:
+## 🔎 Changes made:
 - Improved the grammar and clarity of the descriptions.
 - Organized the features list.
 - Corrected typos and formatting issues.
