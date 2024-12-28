@@ -45,6 +45,7 @@
     color: #161414;
 }
 
+
 .brand-container{
     display:flex;
     align-items: center;
@@ -258,73 +259,3 @@ footer {
 
 
 /*Responsive Styles*/
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .brand-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .brand-container .brand-name {
-        margin: 0;
-    }
-
-    .image-grid {
-        grid-template-columns: auto auto;
-    }
-
-    .image-grid .image-container a img {
-        height: 200px;
-    }
-
-    .image-details-container img {
-        margin: 8px;
-        padding: 8px;
-    }
-
-    .image-details-container .image-hex p {
-        padding: 8px 0px;
-    }
-
-    .form-container .form {
-        padding: 8px;
-    }
-
-    .mini-nav-container {
-        padding: 8px;
-    }
-
-    .confirm-btn {
-        padding: 8px 12px;
-    }
-
-    .delete-btn {
-        padding: 8px 12px;
-    }
-
-    .upload-btn {
-        padding: 8px 12px;
-    }
-
-    .cancel-btn {
-        padding: 8px 12px;
-    }
-
-    .details-btn {
-        padding: 8px 12px;
-    }
-
-    .submit-image-btn {
-        margin: 8px;
-        padding: 8px;
-    }
-}
