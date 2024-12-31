@@ -40,10 +40,12 @@ DATABASES = {
    "NAME": BASE_DIR/ "db.sqlite3",
  }
 }
-  
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver
+
+  ```sh
+   python manage.py makemigrations
+   python manage.py migrate
+   python manage.py runserver
+
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
