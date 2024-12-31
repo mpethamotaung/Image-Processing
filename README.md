@@ -3,7 +3,7 @@
 This Django application handles image file uploads. Uploaded images are stored in an SQLite database. The center-most pixel of each image is extracted and displayed along with its details.
 
 ## 🎞️ Demo
-Version 1: https://youtu.be/7NSZMfKlYF0
+Version 1: [![Watch the video] (https://youtu.be/7NSZMfKlYF0) ]
 
 Version 2: https://youtu.be/4zb0mOofng4
 
