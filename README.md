@@ -41,7 +41,7 @@ DATABASES = {
  }
 }
 ```
-
+After making modifications to the DATABASE route, run the following:
   ```sh
    python manage.py makemigrations
    python manage.py migrate
