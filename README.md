@@ -63,4 +63,4 @@ DATABASES = {
 - Organized the features list.
 - Corrected typos and formatting issues.
 - Added syntax highlighting for the command.
-- Switched SQLite3 to PostgreSQL (Visit technical documentation to see details)
+- Changed SQLite3 to PostgreSQL (Visit technical documentation to see details)
