@@ -33,10 +33,22 @@ This Django application handles image file uploads. Uploaded images are stored i
    ```sh
    pip install -r /path/to/requirements.txt
 4. Open the repository directory '(local_instance)/image-processing/pixelsproject/' in the command line (in your IDE of choice) and run:
-   ```sh
+  
+  **NOTE:** If you want to use the default SQLite3 database then you have to modify the database section of pixelsproject/settings.py back to:
+  ```sh
+DATABASES = {
+   "default": {
+   "ENGINE": "django.db.backends.sqlite3",
+   "NAME": BASE_DIR/ "db.sqlite3",
+ }
+}
+   # Database
+   # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+  ```sh
    python manage.py makemigrations
    python manage.py migrate
    python manage.py runserver
+
 5. The default development server address is:  'http://127.0.0.1:8000/'
 6. Navigate to 'upload image' in the navbar and upload image(s)
 7. I've included a pics folder for your convenience 'app_test_images' or you can use your images to test the app.
