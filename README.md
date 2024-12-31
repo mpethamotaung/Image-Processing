@@ -33,15 +33,15 @@ This Django application handles image file uploads. Uploaded images are stored i
 4. Open the repository directory '(local_instance)/image-processing/pixelsproject/' in the command line (in your IDE of choice) and run:
   
   **NOTE:** If you want to use the default SQLite3 database then you have to modify the database section of pixelsproject/settings.py back to:
-```console
-DATABASES = {
-   "default": {
-   "ENGINE": "django.db.backends.sqlite3",
-   "NAME": BASE_DIR/ "db.sqlite3",
- }
-}
-```
-After making modifications to the DATABASE route, run the following:
+  ```console
+  DATABASES = {
+     "default": {
+     "ENGINE": "django.db.backends.sqlite3",
+     "NAME": BASE_DIR/ "db.sqlite3",
+   }
+  }
+  ```
+  After making modifications to the DATABASE route, run the following:
   ```sh
    python manage.py makemigrations
    python manage.py migrate
