@@ -48,8 +48,7 @@ DATABASES = {
    ```
 
 
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+**Database: https://docs.djangoproject.com/en/5.1/ref/settings/#databases**
 
 5. The default development server address is:  'http://127.0.0.1:8000/'
 6. Navigate to 'upload image' in the navbar and upload image(s)
