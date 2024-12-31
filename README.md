@@ -75,3 +75,4 @@ Version 4: https://youtu.be/nrqR6qGgQpc
 - Corrected typos and formatting issues.
 - Added syntax highlighting for the command.
 - Changed SQLite3 to PostgreSQL (Visit technical documentation to see details)
+- Responsive web design using media queries
