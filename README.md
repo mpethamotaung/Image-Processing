@@ -2,6 +2,8 @@
 
 This Django application handles image file uploads. Uploaded images are processed. The center-most pixel of each image is extracted and displayed along with its details.
 
+![image alt](image_url)
+
 ## 🎞️ Demo
 Version 1: https://youtu.be/7NSZMfKlYF0
 
