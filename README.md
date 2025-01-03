@@ -31,6 +31,7 @@ https://www.figma.com/proto/Powuiik4uCqOdDBkKomk3k/Image-Pixel-Extractor?page-id
 * CSS
 * Javascript
 * Figma
+* Vite + Vue (pending...)
 
 ## ⚙ Getting Started
 1. Fork the repository.
