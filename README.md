@@ -6,7 +6,7 @@ This Django application handles image file uploads. Uploaded images are processe
 
 ## 🎞️ Demo
 Version 1: 
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://youtu.be/7NSZMfKlYF0) 
+[![Watch the video](https://img.youtube.com/vi/<VIDEO ID>/maxresdefault.jpg)](https://youtu.be/7NSZMfKlYF0) 
 
 Version 2: 
 [![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://youtu.be/4zb0mOofng4) 
