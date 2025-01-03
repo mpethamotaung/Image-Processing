@@ -5,7 +5,7 @@ This Django application handles image file uploads. Uploaded images are processe
 ![image alt](https://github.com/mpethamotaung/Image-Processing/blob/0ae575db153d1a3a3fbdab61d73e8b071259f211/Pixel%20Extractor.png)
 
 ## 🎞️ Demo
-Version 1: https://youtu.be/7NSZMfKlYF0
+Version 1: [![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://youtu.be/7NSZMfKlYF0) 
 
 Version 2: https://youtu.be/4zb0mOofng4
 
