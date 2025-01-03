@@ -1,6 +1,6 @@
 # Image Processing README
 
-This Django application handles image file uploads. Uploaded images are processed. The center-most pixel of each image is extracted and displayed along with its details.
+This Django application handles image file uploads. Uploaded images are processed. The center-most pixel of each image is extracted and displayed along with its hex value.
 
 ![image alt](https://github.com/mpethamotaung/Image-Processing/blob/0ae575db153d1a3a3fbdab61d73e8b071259f211/Pixel%20Extractor.png)
 
